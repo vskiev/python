@@ -25,6 +25,7 @@
 
 #!/usr/bin/env python3
 test_strings = ["kawabunga", "metro2013", "moon", "orange"]
+tmp = test_strings[:]
 
 def shwalengthimter(test_strings):
 
@@ -36,22 +37,26 @@ def shwalengthimter(test_strings):
 
 
 
+    # def removeWithCondition(lst):
+    #     templist = list()
+    #     for w in lst:
+    #         if w[0] == "a" or w[0] == "e" or w[0] == "o" or w[0] == "i" or w[0] == "u" or w[0] == "y":
+    #             templist.append(w[1:])
+    #         else:
+    #             templist.append(w)
+    #     return templist
+    #
     def removeWithCondition(lst):
         templist = list()
-        for w in lst:
-            if w[0] == "a" or w[0] == "e" or w[0] == "o" or w[0] == "i" or w[0] == "u" or w[0] == "y":
-                templist.append(w[1:])
-            else:
-                templist.append(w)
-        return templist
+        string = "aeoiuy"
 
 
 
     def addingShwa(lst):
         templist = list()
         for w in lst:
-            length = len(w)
-            s = 'shwa' + w + " " + str(length+4)
+            # length = len(w)
+            s = 'shwa' + w + " " + str()
             templist.append(s)
         return templist
 
