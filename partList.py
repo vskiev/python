@@ -13,6 +13,7 @@
 # [('az', 'toto picaro zone kiwi'), ('az toto', 'picaro zone kiwi'), ('az toto picaro', 'zone kiwi'), ('az toto picaro zone', 'kiwi')]
 
 
+#!/usr/bin/python3.6
 list_ = ["az", "toto", "picaro", "zone", "kiwi"]
 def partlist(list_):
  b = list()
@@ -29,6 +30,9 @@ def partlist(list_):
   c.append(j)
 
  return c
+
+print(partlist(list_))
+
 
 '''zip(*iterables)
 Make an iterator that aggregates elements from each of the iterables.
